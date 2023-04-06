@@ -1,17 +1,11 @@
-
 <!-- on affiche le contenu de nos variables dans le template (vue) grâce au {{String Interpolation}} -->
 
-
-
-<!-- notre manière d'apl les valeurs des attributs est correcte.
-Il peut arriver que les valeurs de ces attributs ne soient pas forcément des strings.
-Nous allons donc préférer une syntaxe unique [] -->
-
-
-<!-- <img src="{{imageUrl}}" alt="image film" /> -->
-
-<!-- Nous alolons écrire : -->
-<!-- <img [src]="imageUrl" [alt]="titre" /> -->
-
-<!-- l'attribut binding lie la valeur d'une propriété à l'attribut d'une balise HTML
-en utilisant des crochets [] -->
+<section class="film_doc">
+    <div>
+        <h2> {{instanceFilm.titre}}, de {{instanceFilm.realisateur}}. </h2>
+        <p> {{instanceFilm.description}}. </p>
+        <p> {{instanceFilm.dureeTotale}} minutes.</p>
+        <p> {{instanceFilm.dureeVisio}} minutes.</p>
+        <img [src]="instanceFilm.imgUrl" [alt]="instanceFilm.titre" />
+    </div>
+</section>

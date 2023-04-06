@@ -1,3 +1,22 @@
-img {
-    width: 20rem;
+* {
+    background-color: #80f389;
 }
+
+section {
+    border: 1px solid #333;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    width: 25%;
+    display: inline-flex;
+    height: 30rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+

@@ -1,3 +1,9 @@
-<app-liste-films></app-liste-films>
+<!-- nous avons besoin de l'attribut binding pour lier un objet envoyé depuis 
+  app.component.ts à notre propriété en provenance de notre composant (instanceFilm) -->
 
-<app-liste-films></app-liste-films>
+<h1>Ma vidéothèque</h1>
+
+<app-liste-films *ngFor="let film of listeFilms" [instanceFilm]="film"></app-liste-films>
+
+
+
